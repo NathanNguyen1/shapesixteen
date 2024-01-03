@@ -1,15 +1,16 @@
 
+
 /**
- * Implement a circle
+ * Shape interface is the template used to define geometric shapes
  * 
- * @author Mr. Jaffe 
+ * @author Mr. Jaffe
  * @version 2017-07-14
  */
 public class Sixteen implements Shape
 {
   private int sideLength;
   private String color;
-
+  
   /**
    * Constructor for objects of class Circle
    */
@@ -18,34 +19,32 @@ public class Sixteen implements Shape
     this.sideLength = sideLength;
     this.color = color;
   }
-
-  /**
-   * Get the area
+  
+    /**
+   * Computes the area of the shape
    * 
-   * @return     returns the area of the circle
+   * @return    The computed area
    */
-  public double getArea()
-  {
-    return (16 * sideLength * (sideLength / (2 * Math.tan(11.25) * (180 / 16)))) / 2;
+  public double getArea() {
+      double apothem = (sideLength / (2 * java.lang.Math.tan(180/16)));
+      return ((16 * sideLength * apothem) / 2);
   }
 
   /**
-   * Get the perimeter
+   * Computes the perimeter of the shape
    * 
-   * @return     returns the perimeter of the circle
+   * @return    The computed perimeter
    */
-  public double getPerimeter()
-  {
-    return 2 * Math.PI * this.sideLength;
+  public double getPerimeter(){
+      return (16 * sideLength);
   }
 
   /**
-   * Get the color
+   * Gets the shape's color
    * 
-   * @return     returns the color of the circle
+   * @return    The color
    */
-  public String getColor()
-  {
-    return this.color;
+  public String getColor() {
+      return color;
   }
 }

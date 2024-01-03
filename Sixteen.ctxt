@@ -1,16 +1,16 @@
 #BlueJ class context
 comment0.target=Sixteen
-comment0.text=\n\ Implement\ a\ circle\n\ \n\ @author\ Mr.\ Jaffe\ \n\ @version\ 2017-07-14\n
+comment0.text=\n\ Shape\ interface\ is\ the\ template\ used\ to\ define\ geometric\ shapes\n\ \n\ @author\ Mr.\ Jaffe\n\ @version\ 2017-07-14\n
 comment1.params=sideLength\ color
 comment1.target=Sixteen(int,\ java.lang.String)
 comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Circle\n
 comment2.params=
 comment2.target=double\ getArea()
-comment2.text=\n\ Get\ the\ area\n\ \n\ @return\ \ \ \ \ returns\ the\ area\ of\ the\ circle\n
+comment2.text=\n\ Computes\ the\ area\ of\ the\ shape\n\ \n\ @return\ \ \ \ The\ computed\ area\n
 comment3.params=
 comment3.target=double\ getPerimeter()
-comment3.text=\n\ Get\ the\ perimeter\n\ \n\ @return\ \ \ \ \ returns\ the\ perimeter\ of\ the\ circle\n
+comment3.text=\n\ Computes\ the\ perimeter\ of\ the\ shape\n\ \n\ @return\ \ \ \ The\ computed\ perimeter\n
 comment4.params=
 comment4.target=java.lang.String\ getColor()
-comment4.text=\n\ Get\ the\ color\n\ \n\ @return\ \ \ \ \ returns\ the\ color\ of\ the\ circle\n
+comment4.text=\n\ Gets\ the\ shape's\ color\n\ \n\ @return\ \ \ \ The\ color\n
 numComments=5
