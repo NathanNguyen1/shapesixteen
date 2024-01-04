@@ -26,8 +26,7 @@ public class Sixteen implements Shape
    * @return    The computed area
    */
   public double getArea() {
-      double apothem = (sideLength / (2 * java.lang.Math.tan(180/16)));
-      return ((16 * sideLength * apothem) / 2);
+      return (this.sideLength * this.sideLength * 16) / 4 * Math.tan(180 / 16) * -1;
   }
 
   /**
@@ -36,7 +35,7 @@ public class Sixteen implements Shape
    * @return    The computed perimeter
    */
   public double getPerimeter(){
-      return (16 * sideLength);
+      return 16 * sideLength;
   }
 
   /**
