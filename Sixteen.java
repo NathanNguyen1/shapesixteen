@@ -26,7 +26,8 @@ public class Sixteen implements Shape
    * @return    The computed area
    */
   public double getArea() {
-      return (this.sideLength * this.sideLength * 16) / 4 * Math.tan(180 / 16) * -1;
+      double apothem = this.sideLength / (2 * Math.tan(Math.toRadians(180 / 16)));
+      return (this.getPerimeter() * apothem / 2);
   }
 
   /**
